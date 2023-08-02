@@ -4,7 +4,7 @@ import { PanelOptions } from 'types';
 import { LiveError, LivePreview, LiveProvider } from 'react-live';
 import * as grafanaRuntime from '@grafana/runtime';
 import { tw } from 'twind';
-import * as axios from "axios"
+import axios from "axios"
 
 interface Props extends PanelProps<PanelOptions> {}
 
