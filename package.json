@@ -16,6 +16,7 @@
     "@grafana/data": "latest",
     "@grafana/runtime": "^10.0.3",
     "@grafana/ui": "latest",
+    "axios": "^1.4.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-live": "^4.1.3",
