@@ -5,7 +5,7 @@
   "id": "render-react-app",
 
   "info": {
-    "description": "Grafana Panel Plugin Template",
+    "description": "Grafana Panel plugin to render react component from given source code",
     "author": {
       "name": "Your Name"
     },
