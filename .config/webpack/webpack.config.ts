@@ -96,6 +96,12 @@ const config = async (env): Promise<Configuration> => {
           },
         },
         {
+          test: /\.m?js$/,
+          resolve: {
+            fullySpecified: false, // disable the behavior
+          },
+        },
+        {
           test: /\.css$/,
           use: ["style-loader", "css-loader"]
         },
@@ -199,11 +205,12 @@ const config = async (env): Promise<Configuration> => {
     },
   }
 
-  if(isWSL()) {
+  if (isWSL()) {
     baseConfig.watchOptions = {
       poll: 3000,
       ignored: /node_modules/,
-    }}
+    }
+  }
 
 
   return baseConfig;
