@@ -1,12 +1,3 @@
 {
-  "include": ["src", "types"],
-  "compilerOptions": {
-    "rootDir": "./src",
-    "baseUrl": "./src",
-    "typeRoots": ["./node_modules/@types"],
-    "module": "CommonJS",
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "removeComments": true
-  }
+  "extends": "./.config/tsconfig.json"
 }
