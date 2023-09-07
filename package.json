@@ -9,10 +9,13 @@
   },
   "author": "April",
   "devDependencies": {
-    "@grafana/toolkit": "latest",
+    "@grafana/toolkit": "^10.1.1",
     "@types/react-dom": "^18.2.7"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@grafana/data": "latest",
     "@grafana/runtime": "^10.0.3",
     "@grafana/ui": "latest",
