@@ -8,9 +8,9 @@ import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as icons from '@fortawesome/free-solid-svg-icons'
 
-interface Props extends PanelProps<PanelOptions> {}
+interface Props extends PanelProps<PanelOptions> { }
 
-export const Panel: React.FC<Props> = ({ options: { code }, data, width, height }) => {
+export const Panel = ({ options: { code }, data, width, height }: Props) => {
   return (
     <div>
       <LiveProvider code={code} scope={{ data, width, height, React, grafanaRuntime, axios, tw, FontAwesomeIcon, icons }} noInline={true}>

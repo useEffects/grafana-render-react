@@ -1,9 +1,9 @@
 import { StandardEditorProps } from '@grafana/data';
 import { CodeEditor } from '@grafana/ui';
-import React, { FC } from 'react';
+import React from 'react';
 import { PanelOptions } from 'types';
 
-export const Editor: FC<StandardEditorProps<string, any, PanelOptions>> = ({ value, onChange }) => {
+export const Editor = ({ value, onChange }: StandardEditorProps<string, any, PanelOptions>) => {
   return (
     <CodeEditor
       value={value}
