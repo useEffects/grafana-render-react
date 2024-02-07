@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as icons from '@fortawesome/free-solid-svg-icons'
 import * as brandIcons from "@fortawesome/free-brands-svg-icons"
 import * as grafanaUi from "@grafana/ui"
+import * as grafanaData from "@grafana/data"
 import "./styles.css"
 
 interface Props extends PanelProps<PanelOptions> { }
@@ -16,7 +17,7 @@ interface Props extends PanelProps<PanelOptions> { }
 export const Panel = ({ options: { code }, data, width, height }: Props) => {
   return (
     <div>
-      <LiveProvider code={code} scope={{ data, width, height, React, grafanaRuntime, axios, tw, FontAwesomeIcon, icons, grafanaUi, brandIcons }} noInline={true}>
+      <LiveProvider code={code} scope={{ data, width, height, React, grafanaRuntime, axios, tw, FontAwesomeIcon, icons, grafanaUi, brandIcons, grafanaData }} noInline={true}>
         <LiveError />
         <LivePreview />
       </LiveProvider>
